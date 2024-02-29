@@ -82,7 +82,6 @@ const resetGame = function () {
   number.style.width = '15rem';
 };
 
-document.querySelector('.again').addEventListener('click', resetGame);
 document.querySelector('.new').addEventListener('click', resetGame);
 
 // Modal Controller
