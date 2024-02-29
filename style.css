@@ -233,10 +233,19 @@ h1 {
   }
 
   .again {
-    position: fixed;
-    bottom: 2rem;
+    display: none;
+  }
+
+  .new {
+    display: block;
+    position: absolute;
+    padding: 2rem 3.5rem;
     left: 2rem;
-    top: 72.759rem;
+    bottom: 2rem;
+  }
+
+  .new::after {
+    content: ' Game';
   }
 }
 
