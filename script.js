@@ -65,7 +65,7 @@ check.addEventListener('click', function () {
 });
 
 // Click on New Game button - reset game
-document.querySelector('.again').addEventListener('click', function () {
+const resetGame = function () {
   secretNumber = randomNumber();
   score = 20;
 
@@ -80,7 +80,10 @@ document.querySelector('.again').addEventListener('click', function () {
 
   body.style.backgroundColor = '#222';
   number.style.width = '15rem';
-});
+};
+
+document.querySelector('.again').addEventListener('click', resetGame);
+document.querySelector('.new').addEventListener('click', resetGame);
 
 // Modal Controller
 const modal = document.querySelector('.modal');

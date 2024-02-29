@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
+    <title>Guess Number</title>
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
+      <h1>Guess Number</h1>
       <p class="between">(Guess A Number Between 1 and 100)</p>
-      <button class="btn again">New Game</button>
+      <button class="btn again"><span>New Game</span></button>
       <div class="number">?</div>
     </header>
     <main>
@@ -26,7 +26,10 @@
           🥇 Highscore: <span class="highscore">0</span>
         </p>
       </section>
-      <button class="btn quit">Quit Game</button>
+      <div>
+        <button class="btn new hidden">New</button>
+        <button class="btn quit"><span>Quit Game</span></button>
+      </div>
       <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <h1>ARE YOU SURE?</h1>
