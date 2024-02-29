@@ -10,8 +10,8 @@
   <body>
     <header>
       <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
+      <p class="between">(Guess A Number Between 1 and 100)</p>
+      <button class="btn again">New Game</button>
       <div class="number">?</div>
     </header>
     <main>
@@ -26,6 +26,19 @@
           🥇 Highscore: <span class="highscore">0</span>
         </p>
       </section>
+      <button class="btn quit">Quit Game</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>ARE YOU SURE?</h1>
+        <p>You will lose your Highscore if you Quit.</p>
+        <div class="buttons">
+          <button class="btn no">NO</button>
+          <a href="https://react-project-mini-games-collection.onrender.com/"
+            ><button class="btn">YES</button></a
+          >
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
   </body>

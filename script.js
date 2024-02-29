@@ -81,3 +81,36 @@ document.querySelector('.again').addEventListener('click', function () {
   body.style.backgroundColor = '#222';
   number.style.width = '15rem';
 });
+
+// Modal Controller
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnShowModal = document.querySelector('.quit');
+const btnCloseModal = document.querySelector('.close-modal');
+const noBtn = document.querySelector('.no');
+
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+btnShowModal.addEventListener('click', openModal);
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+noBtn.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (e) {
+  if (
+    e.key === 'Escape' &&
+    (!modal.classList.contains('hidden') ||
+      !overlay.classList.contains('hidden'))
+  ) {
+    closeModal();
+  }
+});
