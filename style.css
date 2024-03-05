@@ -41,7 +41,7 @@ main {
 }
 
 .right {
-  width: 52rem;
+  width: 50rem;
   font-size: 2rem;
 }
 
@@ -118,17 +118,21 @@ h1 {
 }
 
 .quit {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  /* position: absolute; */
+  /* bottom: 2rem;
+  right: 2rem; */
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .new {
   display: block;
-  position: absolute;
+  /* position: absolute; */
   padding: 2rem 4rem;
-  right: 2rem;
-  bottom: 10rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  /* right: 2rem;
+  bottom: 10rem; */
 }
 
 /* MODAL */
@@ -205,7 +209,12 @@ h1 {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    top: 50%;
+  }
+
+  .between {
+    font-size: 1rem;
   }
 
   .left {
@@ -220,17 +229,27 @@ h1 {
     align-items: center;
   }
 
+  .number {
+    width: 9rem;
+    padding: 1rem 0 0 0.5rem;
+  }
+
   .guess {
     border: 2px solid #eee;
     font-size: 2.5rem;
     padding: 1.25rem;
     width: 15rem;
-    margin-top: 18rem;
+    margin-top: 20rem;
     display: block;
   }
+
   .message {
-    margin: 2rem 0 6rem;
+    margin: 2rem 0 5rem;
     height: 1.5rem;
+  }
+
+  .game-buttons {
+    display: flex;
   }
 
   .new span,
@@ -239,11 +258,16 @@ h1 {
   }
 
   .new {
-    display: block;
-    position: absolute;
+    /* display: block;
+    position: absolute; */
     padding: 2rem 3.5rem;
     left: 2rem;
     bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .quit {
+    margin-bottom: 2rem;
   }
 
   .quit::after {
@@ -262,8 +286,8 @@ h1 {
 
   .between {
     font-size: 1rem;
-    left: 1rem;
-    right: 1rem;
+    /* left: 1rem;
+    right: 1rem; */
   }
 
   header h1 {
@@ -290,12 +314,16 @@ h1 {
     font-size: 2rem;
     padding: 1.25rem;
     width: 11rem;
-    margin-top: 12rem;
+    margin-top: 15rem;
     margin-bottom: 2.25rem;
   }
 
   .check {
     padding: 2rem 1.25rem 2rem 1.75rem;
+  }
+
+  .game-buttons {
+    display: flex;
   }
 
   .new span,
@@ -304,11 +332,11 @@ h1 {
   }
 
   .new {
-    display: block;
-    position: absolute;
+    /* display: block; */
+    /* position: absolute; */
     padding: 2rem 4rem;
-    left: 2rem;
-    bottom: 2rem;
+    /* left: 2rem;
+    bottom: 2rem; */
   }
 
   .quit::after {
